@@ -3,12 +3,11 @@
   <head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile page</title>
-
     <style>
       body{
         margin: 0;
         min-height: 100vh;
-        background: linear-gradient(to bottom right,#5684da,#2e41e7);
+        background: linear-gradient(135deg, #e6f3ff,#f1e8ff);
         display: flex;
         align-items: center;
         padding: 15px;
@@ -66,8 +65,8 @@
         transition: transform 0.2s, background 0.2s;
       }
 
-    .button:hover {
-      background: rgb(37, 166, 209);
+    .button:hover{
+      background:#5684da ;
       transform: translateY(-2px);
        }
        textarea{resize: none;}
@@ -82,13 +81,21 @@
        ul.skills li {
         margin-bottom: 6px;
        }
+       .media-buttons{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+       }
 
     </style>
   </head>
   <body>
-    <div class="project">
+
+   <div class="project">
      <img class="profpic" src="profilepic.jpeg" >
-    <h1>Sharon Njoroge</h1>
+     <h1>Sharon Njoroge</h1>
       <p>Front-End Developer</p>
 
   
@@ -106,8 +113,18 @@
         <input class="email" type="text" placeholder="Your Email" required>
         <textarea class="message" placeholder="Your Message" required></textarea>
         <button class="button" type="submit">Send</button>
-      </form>
-    </div>
+            </form>
+      <br>
+
+      <a href="SIGN UP FORM.html">
+      <button type="button"> Sign Up </button>
+      </a>
+       <div class="media-buttons">
+        <a href="media.html#video" class="button">Watch Video</a>
+        <a href="media.html#image" class="button">View Image</a>
+        <a href="media.html#audio" class="button">Listen Audio</a>
+      </div>
+   </div>
 
   </body>
 </html>
