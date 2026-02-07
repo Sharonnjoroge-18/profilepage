@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Booth</title>
+  <style>
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #d7e1f5, #f5f7fa);
+    }
+
+    .media{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      padding: 20px;
+      margin: auto;
+      height: 100vh;
+    }
+
+    .video{
+      width: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+      border-radius: 12px;
+    } 
+
+    .side{
+      display: grid;
+      grid-template-rows:  auto auto;
+      gap: 20px;
+      background-color:rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+      padding: 10px;
+      border-radius: 12px;
+    }
+    .image{
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .audio{
+      width: 100%;
+      text-align: center;
+    }
+    h2{
+     color: #1a73e8;
+     font-size: 1.2rem;
+     text-align: center;
+     margin-bottom: 10px; 
+    }
+
+  </style>
+</head>
+<body>
+  <div class="media" >
+
+    <div id="video" >
+      <h2>Video Showcase</h2>
+      <video controls >
+        <source src="webdesigns.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="side" >
+      <div id="image" >
+        <h2>Profile Image</h2>
+        <img src="profilepic.jpeg" alt="profilepic">
+      </div>
+
+      <div id="audio" >
+        <h2> Audio introduction</h2>
+        <audio controls>
+          <source src="audio1.aac">
+        </audio>
+      </div>
+    </div> 
+
+  </div>
+  
+</body>
+</html>
