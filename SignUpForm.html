@@ -2,30 +2,89 @@
 <html>
 <head>
 <title> SIGN UP FORM </title>
+<style>
+    body{
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        background-color: rgb(0,120,255);
+
+    }
+    .form-title{
+        text-align: center;
+        font-family: Arial;
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    .card{
+        background: white;
+        border: solid;
+        border-radius: 18px;
+        border-color: silver;
+        align-items: center;
+        padding: 20px;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    form{
+        color: rgb(73, 72, 72);
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    form input{
+        height: 30px;
+        width: 300px;
+        padding: 5px;
+        border-radius: 6px;
+        border: 2px solid #ccc;
+
+    }
+    .button{
+        padding: 10px;
+        width: 150px;
+        background-color: rgb(0, 120, 255);
+        color: white;
+        border: none;
+    }
+    .button:hover{
+        cursor: pointer;
+        opacity:0.8;
+    }
+</style>
 </head>
-<body>
-<form action="submit" method="POST'>
+<body >
+     <div class="card">
 
-<label for="name">Last name:</label>
-<br>
-<input type="text" id="lastname" placeholder="Surname" required> <br> <br>
+        <form action="submit" method="POST">
 
-<label for="name">First name: </label>
-<br>
-<input type="text" id="firstname" placeholder="First name" required> <br><br>
+            <h2 class="form-title"> Sign Up </h2><br>
 
-<label for="email"> Email Address </label> <br>
-<input type="email" id="email" placeholder="somewhere@yahoo.com" required>
-<br> <br>
+        <label for="name">Last name:</label>
+        <br>
+        <input type="text" id="lastname" placeholder="Surname" required> <br> <br>
 
-<label for="password"> password </label> <br>
-<input type="password" id="password" minlength="8" required> <br><br>
+        <label for="name">First name: </label>
+        <br>
+        <input type="text" id="firstname" placeholder="First name" required> <br><br>
 
-<label for="phone"> Phone Number </label> <br>
-<input type="tel" id="phone" maxlength="15" required> <br><br>
+        <label for="email"> Email Address </label> <br>
+        <input type="email" id="email" placeholder="somewhere@yahoo.com" required>
+        <br> <br>
 
-<input type="submit" value"Send">
-</form>
+        <label for="password"> password </label> <br>
+        <input type="password" id="password" minlength="8" required> <br><br>
+
+        <label for="phone"> Phone Number </label> <br>
+        <input type="tel" id="phone" maxlength="15" required> <br><br>
+
+        <input class="button" type="submit" value="Send">
+        </form>
+    </div>
 
 
 </body>
