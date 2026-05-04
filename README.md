@@ -37,4 +37,4 @@ The goal of this project was to practice and demonstrate:
 - Enhance UI with animations or transitions  
 
 ## Author
-[Your Name]
+[Sharon Njoroge]
